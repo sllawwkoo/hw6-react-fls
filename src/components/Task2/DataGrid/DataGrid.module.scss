@@ -1,0 +1,77 @@
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #e0e5ec;
+  border-radius: 16px;
+  padding: clamp(1rem, 2vw, 2rem);
+  box-shadow:
+    8px 8px 16px #babecc,
+    -8px -8px 16px #ffffff;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.controls input {
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: none;
+  background: #f0f3f7;
+  font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+  box-shadow:
+    inset 4px 4px 8px #babecc,
+    inset -4px -4px 8px #ffffff;
+}
+
+.sortButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sortButtons button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #dfe4ea;
+  font-weight: 600;
+	font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+  box-shadow:
+    4px 4px 8px #babecc,
+    -4px -4px 8px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sortButtons button:hover {
+  background: #ced6e0;
+  color: #2f3542;
+}
+
+.header {
+  display: flex;
+	align-items: center;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  background: #f1f2f6;
+  border-radius: 12px;
+  box-shadow:
+    inset 2px 2px 4px #babecc,
+    inset -2px -2px 4px #ffffff;
+  margin-bottom: 0.5rem;
+
+	span {
+    flex: 1;
+    text-align: center;
+		font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+
+    &:first-child {
+      text-align: left; 
+      flex: 2;          
+    }
+  }
+}

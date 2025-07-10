@@ -1,0 +1,18 @@
+.wrapper {
+	text-align: center;
+	margin: clamp(1rem, 0.682rem + 1.59vw, 2rem) 0;
+	background: #e0e5ec;
+	padding: clamp(0.75rem, 0.625rem + 0.57vw, 1.25rem);
+	border-radius: 16px;
+	box-shadow:
+		inset 8px 8px 16px #babecc,
+		inset -8px -8px 16px #ffffff;
+	min-height: clamp(3.5rem, 2.818rem + 3.41vw, 5.375rem);
+}
+
+.result {
+	font-size: clamp(2rem, 1.591rem + 2.05vw, 3.125rem);
+	color: #2c3e50;
+	font-weight: 700;
+	font-family: var(--font-shantell);
+}

@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: linear-gradient(145deg, #dbe1e8, #f0f3f7);
+  padding: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+	background: #e0e5ec;
+  box-shadow:
+    8px 8px 16px #babecc,
+    -8px -8px 16px #ffffff;
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 60px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.inputsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 0.682rem + 1.59vw, 2rem);
+  margin-bottom: clamp(1rem, 0.682rem + 1.59vw, 2rem);
+}
+
+.inputLine {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputLine label {
+  font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: var(--font-ubuntu);
+}
+
+.inputLine input {
+  padding: clamp(0.625rem, 0.511rem + 0.57vw, 1rem);
+  border-radius: 12px;
+  border: none;
+  background: #e0e5ec;
+  box-shadow:
+    inset 6px 6px 12px #babecc,
+    inset -6px -6px 12px #ffffff;
+  font-size: clamp(1rem, 0.945rem + 0.27vw, 1.2rem);
+  color: #2c3e50;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease;
+}
+
+.inputLine input:focus {
+  outline: none;
+  box-shadow:
+    inset 2px 2px 6px #babecc,
+    inset -2px -2px 6px #ffffff;
+}
+
+.counterBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 0.682rem + 1.59vw, 2rem);
+  margin-top: clamp(1rem, 0.682rem + 1.59vw, 2rem);
+  padding: clamp(1rem, 0.682rem + 1.59vw, 2rem);
+  background: #e0e5ec;
+  border-radius: 16px;
+  box-shadow:
+    8px 8px 16px #babecc,
+    -8px -8px 16px #ffffff;
+}
+
+.counterButton {
+  background: #e0e5ec;
+  border: none;
+  padding: clamp(0.75rem, 0.625rem + 0.57vw, 1.25rem);
+  border-radius: 12px;
+  box-shadow:
+    6px 6px 12px #babecc,
+    -6px -6px 12px #ffffff;
+  font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+  font-weight: 700;
+  color: #2ecc71;
+  cursor: pointer;
+  transition: all 0.2s ease;
+	min-width: clamp(2.188rem, 1.733rem + 2.27vw, 3.438rem);
+}
+
+.counterButton:hover {
+  background: #d4d9e0;
+  color: #27ae60;
+  box-shadow:
+    inset 2px 2px 4px #babecc,
+    inset -2px -2px 4px #ffffff;
+}
+
+.counter {
+	display: inline-block;
+	text-align: center;
+  font-size: clamp(2rem, 1.682rem + 1.59vw, 3rem);
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: var(--font-shantell);
+	min-width: clamp(2.188rem, 1.278rem + 4.55vw, 4.688rem);
+}
