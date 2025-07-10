@@ -6,7 +6,7 @@ function MainPage() {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.container}>
-				<h1 className={styles.title}>Домашня робота №4</h1>
+				<h1 className={styles.title}>Домашня робота №6</h1>
 				<Tabs className={styles.tasks}>
 					<TabList className={styles.tasksList}>
 						{tasks.map(({ id, title }) => (
